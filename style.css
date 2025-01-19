@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 207, 203);
+    font-family:  'Arial Narrow', Arial, sans-serif;
+}
+.header{
+  display: flex;
+  background-color: rgb(56, 55, 55);
+  justify-content: center;
+}
+.header >.logo{
+  position: absolute;
+  top:5px;
+  left:100px;
+}
+.logo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  transition: transform 0.4s;
+}
+
+.logo img:hover{
+  transform: scale(1.57);
+  
+}
+
+
+.head{
+    text-align: center;
+    
+    padding: 25px;
+    color:rgb(188, 188, 189);
+}
+p{
+    color: rgb(207, 204, 199);
+}
+
+.nav{
+    background-color: rgb(39, 38, 38);
+    padding: 15px;
+    
+}
+.nav a{
+    color:aliceblue ;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav a:hover{
+    background-color: orangered;
+    padding: 15px;
+    -webkit-transition: all 1s; ;
+    transition: all 0.5s;
+}
+h1:hover{
+  color: red;
+}
+.pharagrap{
+    background-color: rgb(245, 241, 236);
+    padding: 30px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.pharagrap p{
+    margin-top: 20px;
+    color: rgb(78, 76, 76);
+    margin-left: 20px;
+    box-shadow: 10px;
+}
+
+h3{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.main h1,.main-3 h1{
+    text-align: center;
+    font-weight: bolder;
+    background-color: #3a3f44;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.main h3 ,.main-2 h3,.main-3 h3{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.image-duc{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+.image-duc img{
+    width: 330px;
+    height: 240px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    transition: transform 0.4s;
+}
+.image-duc img:hover{
+  transform: scale(1.23);
+}
+
+.main-2,.main-3{
+  border-top:5px solid rgb(62, 59, 59);
+  padding: 20px;
+  margin: 25px 50px 0 50px;
+}
+.main-2 h1{
+    font-weight: bolder;
+    background-color: #3a3f44;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.lab-duc{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+.lab-duc img{
+  width: 330px;
+  height: 240px;
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #5c6163;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.lab-duc:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: rgb(158, 26, 26);
+  font-size: 40px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+
+.text img{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top :5px;
+  left:40px;
+  border: 1px solid  #5c6163;
+}
+
+
+
+.study-class{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.study-class img{
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  width: 330px;
+  height: 240px;
+  border-radius: 20px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+
+footer {
+    background-color: #0d1c29;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin-top: 3%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer-column h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style-type:disc;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  
+  .social-icon:hover {
+    background-color: orange;
+  }
+  
+  .map-container iframe {
+    border-radius: 10px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(39, 38, 38);
+   
+}
